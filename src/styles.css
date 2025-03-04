@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Pink Gradient */
+    color: #333;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .mat-toolbar {
+    background: linear-gradient(to right, #ffb6c1, #ff69b4);
+    color: white;
+  }
+  
+  h1, h2, h3 {
+    color: #d81b60;
+  }
+  
+  a {
+    color: #ff4081;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+/* styles.css */
+.active-link {
+  font-weight: bold;
+  color: rgb(175, 67, 237);
+  text-decoration: underline;
+}
+  
+/* Spinner Overlay */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

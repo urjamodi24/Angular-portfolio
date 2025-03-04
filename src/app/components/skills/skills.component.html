@@ -1,0 +1,52 @@
+<div class="skills-container">
+  <!-- Hard Skills -->
+  <div class="skill-card">
+    <h3><i class="fas fa-tools"></i> Hard Skills</h3>
+    <ul class="skill-list">
+      <li *ngFor="let skill of hardSkills" class="skill-item" title="Technical Expertise">
+        {{ skill }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Programming Languages -->
+  <div class="skill-card">
+    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+    <ul class="skill-list">
+      <li *ngFor="let lang of programmingLanguages" class="skill-item" title="Programming Language">
+        {{ lang }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Relevant Coursework -->
+  <div class="skill-card">
+    <h3><i class="fas fa-graduation-cap"></i> Relevant Coursework</h3>
+    <ul class="skill-list">
+      <li *ngFor="let course of coursework">{{ course }}</li>
+    </ul>
+  </div>
+
+  <!-- Soft Skills -->
+  <div class="skill-card">
+    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+    <ul class="skill-list">
+      <li *ngFor="let softSkill of softSkills" class="skill-item" title="Soft Skill">
+        {{ softSkill }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Skill Progress Bars -->
+  <div class="skill-card">
+    <h3><i class="fas fa-chart-line"></i> Skill Proficiency</h3>
+    <div *ngFor="let skill of skillProgress">
+      <p title="{{ skill.tooltip }}">
+        {{ skill.name }}
+      </p>
+      <div class="progress-bar-container">
+        <div class="progress-bar" [style.width.%]="skill.level"></div>
+      </div>
+    </div>
+  </div>
+</div>

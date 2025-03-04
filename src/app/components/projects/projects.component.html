@@ -1,0 +1,12 @@
+<mat-card *ngFor="let project of projects" class="project-card">
+  <mat-card-title>{{ project.title }}</mat-card-title>
+  <mat-card-subtitle>{{ project.summary }}</mat-card-subtitle>
+
+  <button mat-flat-button color="primary" (click)="showDetails(project)">
+    {{ selectedProject === project ? 'Hide Details' : 'View Details' }}
+  </button>
+
+  <div *ngIf="selectedProject === project" class="project-details">
+    <p>{{ project.details }}</p>
+  </div>
+</mat-card>
